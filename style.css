@@ -1,0 +1,325 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Menu */
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #364f6b;
+}
+
+.logo{
+    line-height: 80px;;
+}
+
+.menu{
+    float: right;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+    border-bottom: .5px solid black;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left
+}
+
+nav ul li{
+    float: left;
+    padding-top: 30px;
+}
+
+.menu ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.menu ul li::after{
+    content: '';
+    border-bottom: 3px solid black;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease-out;
+    display: block;
+    transform: scaleX(0);   
+}
+
+.menu ul li:hover::after{
+    content: "";
+    transform: scaleX(1);
+}
+
+.btn{
+    list-style: none;
+    float: left;
+    padding-top: 30px;
+}
+
+.btn a.btn-blue{
+    background-color: #3f72af;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn a.btn-blue:hover{
+    background-color: #3FAAAF;
+}
+
+/* Home */
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.column{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.column .description{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    color: #364f6b;
+}
+
+h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+.btn-pink{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+a.btn-pink{
+    background-color: #fc5185;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 8px 20px;
+    transition: .3s;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+a.btn-pink:hover{
+    background-color: #FC7251;
+}
+
+p{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+/* Tutors */
+
+.middle{
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-lists{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tutors-card{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.tutors-card img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.tutors-card p{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+/* Partners */
+
+.partner-lists{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners-card{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.partners-card img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Contact */
+
+#contact{
+    background-color: #dedede;
+    padding: 50px 0;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 991.98px) {
+    body{
+        text-align: center;
+    }
+    
+    .wrapper{
+        width: 90%;
+    }
+
+    h2{
+        font-size: x-large;
+        line-height: 25px;
+    }
+
+    .logo a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 5px;
+    }
+
+    nav .menu ol{
+        text-align: center;
+        margin: auto;
+        line-height: 5px;
+        margin-left: 120px;
+    }
+
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+    }
+
+    nav .menu ol li{
+        display: inline-block;
+        float: none;
+    }
+
+    section{
+        display: block;
+    }
+
+    section img{
+        display: block;
+        width: 85%;
+        height: auto;
+    }
+
+    .tutors-card{
+        width: 50%;
+    }
+
+    .partners-card{
+        width: 50%;
+    }
+
+    .footer-section{
+        font-size: 12px;
+    }
+
+    .footer h3{
+        font-size: medium;
+        line-height: 100%;
+    }
+}
